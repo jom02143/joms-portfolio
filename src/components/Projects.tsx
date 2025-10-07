@@ -5,6 +5,26 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ProjectModal } from './ProjectModal';
 
+import makatiImage from '@/assets/makati1.png';
+import makatiImage2 from '@/assets/makati2.png';
+import makatiImage3 from '@/assets/makati3.png';
+import makatiImage4 from '@/assets/makati4.png';
+
+import furvyImage from '@/assets/furvy1.png';
+import furvyImage2 from '@/assets/furvy2.png';
+import furvyImage3 from '@/assets/furvy3.png';
+import furvyImage4 from '@/assets/furvy4.png';
+
+import awosImage from '@/assets/abomar-thesis.png';
+import awosImage2 from '@/assets/abomar-thesis-2.png';
+import awosImage3 from '@/assets/abomar-thesis-3.png';
+import awosImage4 from '@/assets/abomar-thesis-4.png';
+
+import paradiseImage from '@/assets/paradise.png';
+import paradiseImage2 from '@/assets/paradise1.png';
+import paradiseImage3 from '@/assets/paradise2.png';
+import paradiseImage4 from '@/assets/paradise3.png';
+
 export interface Project {
   id: number;
   title: string;
@@ -22,59 +42,59 @@ const projects: Project[] = [
     id: 1,
     title: 'Makati AIS',
     description: "Makati City Hall Accounting Department's Accounting Information System",
-    fullDescription: 'A comprehensive e-commerce platform built with modern technologies. Features include user authentication, product catalog, shopping cart, secure payment processing via Stripe, order management, and an admin dashboard for inventory control.',
-    image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop',
+    fullDescription: 'Accounting Information System (AIS): A robust financial management solution built on the Laravel/PHP, MySQL, and Vue.js stack, designed to streamline all core accounting processes. It is deployed on an Ubuntu server environment.',
+    image: makatiImage,
     images: [
-      'https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
+      makatiImage2,
+      makatiImage3,
+      makatiImage4,
     ],
-    tech: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'TypeScript'],
+    tech: ['Vue JS', 'Laravel', 'HTML5', 'TailwindCSS', 'MySQL'],
     demoUrl: '#',
     repoUrl: '#',
   },
   {
     id: 2,
-    title: 'Task Management App',
-    description: 'Collaborative project management tool with real-time updates',
-    fullDescription: 'A real-time task management application enabling teams to collaborate effectively. Features drag-and-drop task boards, real-time synchronization using WebSockets, team chat, file attachments, and comprehensive analytics dashboard.',
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop',
+    title: 'Furvy',
+    description: 'Furvy, Software-as-a-Service for Veterinary Clinics',
+    fullDescription: 'Furvy is a comprehensive, full-stack web and mobile application developed during my freelance career to streamline veterinary management. It provides clinics with a complete toolkit, including POS integration, appointment scheduling, user and inventory management, detailed reporting, and a centralized inbox, ensuring an efficient and user-friendly experience. Built with PHP (Laravel), JavaScript, Tailwind CSS, HTML, and CSS, Furvy is reliably hosted on Hostinger.',
+    image: furvyImage,
     images: [
-      'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=800&h=600&fit=crop',
+      furvyImage2,
+      furvyImage3,
+      furvyImage4,
     ],
-    tech: ['Vue.js', 'Firebase', 'Tailwind CSS', 'WebSockets'],
+    tech: ['Laravel', 'HTML5', 'TailwindCSS', 'Javascript', 'MySQL'],
     demoUrl: '#',
     repoUrl: '#',
   },
   {
     id: 3,
-    title: 'Weather Dashboard',
-    description: 'Real-time weather data visualization with forecasting',
-    fullDescription: 'An intuitive weather dashboard providing current conditions and extended forecasts. Utilizes multiple weather APIs for accurate data, features interactive maps, historical data visualization, and personalized weather alerts.',
-    image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&h=600&fit=crop',
+    title: 'Paradise Connect',
+    description: 'Paradise Connect, Hotel and Resort Management System',
+    fullDescription: 'Paradise Connect is a complete Hotel and Resort Management System designed to streamline all aspects of hospitality operations. Developed during my freelance work, the system facilitates efficient guest management, reservation processing, billing, and housekeeping organization. It is built on a reliable stack featuring Laravel (PHP), JavaScript, and MySQL for the backend, with a clean interface styled using HTML5 and Tailwind CSS. The entire solution is reliably hosted on Hostinger.',
+    image: paradiseImage,
     images: [
-      'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1561484930-998b6a7b22e8?w=800&h=600&fit=crop',
+      paradiseImage2,
+      paradiseImage3,
+      paradiseImage4,
     ],
-    tech: ['React', 'Chart.js', 'REST API', 'CSS Grid'],
+    tech: ['Laravel', 'HTML5', 'MySQL', 'Javascript', 'TailwindCSS'],
     demoUrl: '#',
     repoUrl: '#',
   },
   {
     id: 4,
-    title: 'Social Media Analytics',
-    description: 'Comprehensive analytics dashboard for social media insights',
-    fullDescription: 'A powerful analytics platform that aggregates data from multiple social media sources. Provides detailed metrics, engagement analysis, audience demographics, competitive analysis, and automated reporting features.',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
+    title: 'AWOS',
+    description: 'Abomar Work Order System',
+    fullDescription: 'Abomar Work Order System (AWOS) is a specialized application designed to streamline and automate the entire work order lifecycle. It enables efficient creation, assignment, tracking, and completion of tasks for field service or internal maintenance teams. Built with CodeIgniter (PHP), HTML5, and MySQL for robust functionality, and utilizing Firebase for real-time capabilities or user management, the system is hosted securely on the Google Cloud Platform (GCP).',
+    image: awosImage3,
     images: [
-      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=600&fit=crop',
+      awosImage2,
+      awosImage,
+      awosImage4,
     ],
-    tech: ['Next.js', 'D3.js', 'MongoDB', 'Express', 'OAuth'],
+    tech: ['HTML5', 'CodeIgniter', 'MySQL', 'Firebase'],
     demoUrl: '#',
     repoUrl: '#',
   },
@@ -126,17 +146,6 @@ export const Projects = () => {
                   </div>
 
                   <div className="flex gap-3 pt-2">
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      className="flex-1 border-primary hover:bg-primary hover:text-primary-foreground"
-                      asChild
-                    >
-                      <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="h-4 w-4 mr-2" />
-                        Demo
-                      </a>
-                    </Button>
                     <Button
                       size="sm"
                       onClick={() => setSelectedProject(project)}
