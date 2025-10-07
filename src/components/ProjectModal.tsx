@@ -128,7 +128,7 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
           </div>
 
           {/* Links */}
-          <div className="flex gap-3 pt-4">
+          {/* <div className="flex gap-3 pt-4">
             <Button
               className="flex-1 shadow-glow hover:shadow-glow-lg"
               asChild
@@ -148,7 +148,7 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
                 View Code
               </a>
             </Button>
-          </div>
+          </div> */}
         </div>
       </DialogContent>
     </Dialog>
